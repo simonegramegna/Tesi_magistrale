@@ -1,0 +1,54 @@
+\chapter{Introduction}
+% in tutta la tesi: 
+% dividere il testo in paragrafi
+% curare la punteggiatura e la grammatica
+% usare i riferimenti alle sezioni e ai capitoli quando si descrive l'organizzazione di un capitolo
+% i riferimenti vanno prima del punto e serve uno spazio (o ancora meglio ~) prima di \cite
+% non serve scrivere il titolo di un articolo nel testo, basta il riferimento (tranne per casi particolari di titoli molto influenti come "Attention is all you need")
+% referenziare e commentare le figure
+% usare correttamente gli acronimi
+% anche per gli acronimi vanno differenziati correttamente plurale e singolare
+% evitare \\ e \newpage
+% evitare 'I', 'ecc...', 'if we want' ed altre espressioni tipiche dell'inglese parlato
+\section{Context}
+Artificial intelligence (AI) has become an increasingly integral part of our lives, having an undeniable impact on today’s society. AI was defined, for the first time, in 1955 at Darthmounth Research project as problem of "making a machine behave in ways that would be called intelligent if a human were so behaving"\cite{kaplan2019siri}. 
+It was defined, for the first time, in 1955 at Darthmounth Research project as problem of "making a machine behave in ways that would be called intelligent if a human were so behaving" \cite{kaplan2019siri}. The development of AI supported by the increasing availability of computational resources lead to a wide range of applications in multiple domains ranging from industry, healthcare, and business to education \cite{busnatu2022clinical}.  Artificial intelligence is not only applied to these sectors but can also be found in common applications such as social media, digital assistants, recommendations, online searches, and facial recognition \cite{ref1}. These are just some of the applications we interact with in our daily lives. Voice assistants are an example of an interactive application of artificial intelligence. The first voice assistants began to appear starting in 2011, when Apple introduced Siri on its new iPhone mode and later, other assistants were introduced to the market, including Amazon Alexa (2014) and Google Assistant (2016) \cite{ref2}.
+Among the countless applications, also voice assistants appeared, starting with Apple Siri (2011) and followed by Amazon Alexa (2014) and Google Assistant (2016) \cite{ref2}. Voice assistants rely on natural language processing technologies that have become increasingly complex over the years. They have evolved from rule-based models to more advanced architectures and representations, enabling them to process and generate text with greater accuracy. In fact, such voice assistants have been surpassed by ChatGPT, a chatbot released by OpenAI (November 2022). ChatGPT, in which GPT stands for Generative Pre-trained Transformer a family of large language models created by OpenAI that uses deep learning to generate human-like, conversational text.
+ChatGPT relies on the Generative Pre-trained Transformer GPT family of Large Language Models (LLMs).
+LLMs are LMs based on deep learning architectures and trained at a very large scale and they represent a significant leap forward compared to the previous state-of-the-art: a variety of complex tasks can be framed as simple prompting, i.e., creating a simple input text for solving a specific task. This feature is crucial because instead of adapting the training set of the model, it is possible to adapt the input given to the model.
+In contrast, LM typically require fine-tuning on domain-specific data or additional training to adapt to new tasks, whereas adapting the input through prompt engineering allows for flexible task customization without modifying the model's parameters.
+LLMs solve with remarkable performance tasks including coding, mathematical reasoning, and even image generation (when integrated with other architectures e.g., DALL-E 3) \cite{ref3}.
+
+The advent of advanced LLMs creates not only new opportunities for AI, but also introduces significant challenges.
+One of the main challenges in using these models is creating and optimize prompts (questions posed to the model by the humans) \cite{ref5} that provide the model with the right instructions to generate accurate and relevant responses. Prompt engineering specifically addresses this challenge and focuses on defining the interactions and outputs of large language models, whose core purpose is to create optimal prompts for a generative model\cite{amatriain2024prompt}.
+Prompt engineering is a novel discipline that aims at solving this challenge by providing approaches for designing, optimizing and verifying prompts for LLMs \cite{amatriain2024prompt}.
+It is gaining increasing attention, indeed, a new professional role is emerging within industries: the prompt engineers. The prompt engineer must essentially select the most appropriate prompt engineering technique for a given task, a specific large language model, and the intended goal.
+
+\section{Thesis Objective}
+With the rise of LLMs and prompt engineering, a plethora of resources emerged on the web.
+However, as of now, no resource exists that consolidates this knowledge in a clear, simple, and structured manner.
+Therefore, the objective of this thesis is to create 
+an ontology that logically and systematically describes prompt engineering and LLMs, two concepts that, although apparently different, are inherently interconnected.
+The use of an ontology allows for effectively expressing the connections between entities in these two domains by employing classes, instances, and relationships.
+We aim for a well-structured and comprehensive ontology.
+Moreover, we aim to make it available openly and freely in order to a) be reachable by a wide range of users including students, researchers, and developers; b) foster interoperability and reuse. The reuse concept has been used during the development process by reusing ontology design patterns. 
+
+For the purpose, we propose the Prompt Engineering Ontology (PEO): a modern ontology developed using state-of-art methodologies and implemented in OWL: a standardized language based on Description Logics.
+
+Concerning the validity of PEO, we intend to answer the following research questions (RQs):
+\begin{itemize}
+    \item RQ~1: Does PEO provide comprehensive and consistent knowledge on LLMs and prompt engineering?
+
+    \item RQ~2: Can we use PEO to infer additional knowledge?
+\end{itemize}
+For answering the RQs, we perform an experimental study grounded on established experimental protocols.
+
+
+\section{Thesis Structure}
+The subsequent chapters of this thesis are structured as follows. 
+Chapter~\ref{chapter:2_background} illustrates the foundations of the thesis.
+Specifically, it reports the main concepts related to ontologies and ontology engineering methodologies and the state-of-the-art in LLMs and prompt engineering that is our target domain.In Chapter 3, "Ontology design", the ontology design phase is described in detail, including an in-depth explanation of the various stages of the design process. 
+Chapter~\ref{chapter:3_design} details the design of our proposal, PEO. 
+Chapter~\ref{chapter:4_implementation} details the conceptualization and the implementation of PEO. 
+Chapter \ref{chapter:5_evaluation} details the evaluation process of PEO.
+Finally, Chapter~\ref{chapter:6_conclusions_future_developments}, concludes the thesis by summarizing the work accomplished and discussing potential future developments.
